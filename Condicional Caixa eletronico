@@ -35,9 +35,12 @@ programa
 					}
 			}
 			
-			senao{
+			senao se (opcao == 3){
 				escreva("\nPrograma finalizado com sucesso volte sempre")
 				pare
+			}
+			senao{
+				escreva("\nOpção invalida tente novamente.")
 			}
 		}
 	}
