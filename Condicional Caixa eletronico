@@ -40,7 +40,7 @@ programa
 				pare
 			}
 			senao{
-				escreva("\nOpção invalida tente novamente.")
+				escreva("\nOpção invalida tente novamente.\n")
 			}
 		}
 	}
