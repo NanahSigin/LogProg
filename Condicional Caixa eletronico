@@ -16,19 +16,29 @@ programa
 
 			se(opcao == 1){
 				escreva("\n Seu saldo atual é: R$",saldo, "\n")
-			}senao se (opcao == 2){
+			}
+			
+			senao se (opcao == 2){
 				escreva("\nDigite o valor desejado: R$ ")
 				leia(saque)
-			}se (saque > saldo){
-				escreva("\nSaldo insuficiente\n")	
-			}senao se(saque <=0){
-				escreva("\nValor inválido - Digite um valor maior que zero\n")
-			}senao{
-				saldo = saldo - saque
-				escreva("\nSaque realizado com Sucesso\n")
-				escreva("\nNovo saldo: R$", saldo, "\n")
+				
+					se (saque > saldo){
+						escreva("\nSaldo insuficiente\n")	
+					}
+					senao se(saque <=0){
+						escreva("\nValor inválido - Digite um valor maior que zero\n")
+					}
+					senao{
+						saldo = saldo - saque
+						escreva("\nSaque realizado com Sucesso\n")
+						escreva("\nNovo saldo: R$", saldo, "\n")
+					}
 			}
+			
+			senao{
+				escreva("\nPrograma finalizado com sucesso volte sempre")
+				pare
+			}
+		}
 	}
-	
-}
 }
